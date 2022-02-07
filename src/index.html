@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,24 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header"></div>
         <div id="main">
             <div id="content">
                 <div>
-                    <label for="age">Enter your Age:</label>
-                    <input type="text" name="age" id="age">
-                    <label for="age">Enter your Weight:</label>
-                    <input type="text" name="weight" id="weight">
-                    <input type="button" value="pred" id="predict" onclick="predictBMI();">
+                    <div class="float_left">
+                        <label for="name">Name:</label><br>
+                        <label for="age">Age:</label><br>
+                        <label for="age">Weight:</label><br>
+                    </div>
+                    <div class="float_left">
+                        <input type="text" name="name" id="name"><br>
+                        <input type="text" name="age" id="age"><br>
+                        <input type="text" name="weight" id="weight">
+                    </div>
+                    <input type="button" value="Submit" id="predict" onclick="submitForm()">
                 </div>
                 <div>
                     <span id="result"></span>
@@ -29,4 +37,5 @@
         <div id="footer"></div>
     </div>
 </body>
+
 </html>
